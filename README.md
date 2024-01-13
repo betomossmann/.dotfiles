@@ -1,6 +1,6 @@
 > ## Personal Settings
 
-## Steps to bootstrap a new Mac
+## Steps to bootstrap a new Computer
 
 1. Clone repo into new hidden directory.
 
