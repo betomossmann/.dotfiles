@@ -1,0 +1,41 @@
+[alias]
+  f = fetch -p
+	b = branch
+	co = checkout
+	cb = checkout -b
+	c = !git add --all && git commit -m
+	s = !git status -sb
+  # log: #e3c78a (yellow), #ff5454 (red), #36c692 (green), #80a0ff (blue)
+	l = !git log --pretty=format:'%C(blue)%h%C(yellow)%d %C(white)%s - %C(cyan)[ %cn ], %C(green)%cr'
+	count = !git shortlog -s --grep
+  amend = !git add --all && git commit --amend --no-edit
+
+[user]
+  name = Gilberto Mossmann
+  email = 65679707+betomossmann@users.noreply.github.com
+
+[core]
+	editor = code --wait
+
+[push]
+  followTags = true
+
+[pull]
+  ff = only
+  default = current
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = green bold
+  local = green
+  remote = yellow
+
+[color "status"]
+  added = green reverse
+  changed = yellow reverse
+  untracked = red reverse
+
+[init]
+  defaultBranch = main
