@@ -39,19 +39,19 @@
   "window.commandCenter": false,
 
   // WORKBENCH
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.layoutControl.enabled": false,
   "workbench.editor.decorations.colors": true,
   "workbench.editor.decorations.badges": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.layoutControl.enabled": false,
   "workbench.colorTheme": "Evondev Dracula Darker Contrast",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "symbols",
   "workbench.list.smoothScrolling": true,
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.labelFormat": "short",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.tree.indent": 10,
   "breadcrumbs.enabled": false,
 
   // APC CONFIG
@@ -94,7 +94,7 @@
   "cSpell.allowCompoundWords": true,
   "cSpell.enabled": true,
   "cSpell.diagnosticLevel": "Hint",
-  "cSpell.language": "en,pt,pt_BR",
+  "cSpell.language": "en,pt",
   "css.lint.hexColorLength": "ignore",
   "tailwindCSS.validate": true,
   "tailwindCSS.emmetCompletions": true,
@@ -149,6 +149,13 @@
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "explorer.fileNesting.enabled": true,
 
   // ASSOCIATED FILE
   "files.associations": {
@@ -159,6 +166,17 @@
     ".prettierrc": "json",
     "*.css": "tailwindcss"
   },
+  "symbols.files.associations": {
+    "*.module.ts": "nest",
+    "*.guard.ts": "typescript",
+    "*.spec.ts": "ts-test",
+    "*.e2e-spec.ts": "ts-test",
+    "vitest.config.e2e.ts": "vite",
+    ".env.example": "gear"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
   "cSpell.userWords": [
     "apikey",
     "autofetch",
@@ -169,6 +187,8 @@
     "celsius",
     "chakra",
     "clsx",
+    "codeium",
+    "cody",
     "Coverals",
     "Dotenv",
     "drei",
@@ -198,6 +218,7 @@
     "Linkedin",
     "Liskov",
     "liveshare",
+    "lockb",
     "Lotofacil",
     "mardkown",
     "middlewares",
@@ -208,21 +229,25 @@
     "nestjs",
     "nextjs",
     "nextui",
+    "nuxt",
     "Omni",
     "Onboarded",
     "openai",
     "pageinfo",
     "pallas",
     "payloadcms",
+    "pcss",
     "postgres",
     "prefetch",
     "relativehumidity",
     "Roboto",
     "rocketseat",
     "rotion",
+    "sequelizerc",
     "signup",
     "Signup",
     "sqlite",
+    "stylelintrc",
     "subcabeçalhos",
     "subheaders",
     "tabnine",
@@ -332,8 +357,8 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/node_modules": true
+    "**/.DS_Store": true
+    // "**/node_modules": true
   },
   "eslint.validate": [
     "javascript",
@@ -398,5 +423,6 @@
   "editor.inlineSuggest.suppressSuggestions": true,
   "cody.autocomplete.enabled": false,
   "cody.chat.preInstruction": "Answer all my questions in Brazilian Portuguese.",
-  "cody.autocomplete.completeSuggestWidgetSelection": false
+  "cody.autocomplete.completeSuggestWidgetSelection": false,
+  "terminal.integrated.env.windows": {}
 }
