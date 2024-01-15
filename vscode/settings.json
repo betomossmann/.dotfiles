@@ -39,19 +39,19 @@
   "window.commandCenter": false,
 
   // WORKBENCH
-  "workbench.editor.decorations.colors": true,
-  "workbench.editor.decorations.badges": true,
-  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.labelFormat": "short",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 10,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.layoutControl.enabled": false,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.decorations.badges": true,
   "workbench.colorTheme": "Evondev Dracula Darker Contrast",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "symbols",
   "workbench.list.smoothScrolling": true,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.tree.indent": 10,
   "breadcrumbs.enabled": false,
 
   // APC CONFIG
@@ -149,13 +149,6 @@
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.fileNesting.patterns": {
-    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*",
-    "tailwind.config.js": "tailwind.config*, postcss.config*",
-    ".env.local": ".env*",
-    ".env": ".env*"
-  },
-  "explorer.fileNesting.enabled": true,
 
   // ASSOCIATED FILE
   "files.associations": {
@@ -187,7 +180,6 @@
     "celsius",
     "chakra",
     "clsx",
-    "codeium",
     "cody",
     "Coverals",
     "Dotenv",
@@ -244,6 +236,7 @@
     "rocketseat",
     "rotion",
     "sequelizerc",
+    "Signin",
     "signup",
     "Signup",
     "sqlite",
